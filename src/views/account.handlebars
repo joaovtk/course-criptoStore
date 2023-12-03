@@ -6,7 +6,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <title>Sobre Nós</title>
+        <title>Formulário de cadastro</title>
     </head>
 
     <body>
@@ -14,7 +14,7 @@
             <header>
                 <nav class="navbar navbar-expand-lg navbar-light mt-5">
                   <img src="img/cripto.png" id="logo" alt="" />
-                  <a class="navbar-brand" href="index.html">Cripto Store</a>
+                  <a class="navbar-brand" href="/">Cripto Store</a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -24,7 +24,7 @@
                       <li class="nav-item">
                         <a class="nav-link disabled" href="#">Perfil</a>
                       </li>
-                      <li class="nav-item"><a href="account.html" class="nav-link disabled">Adicionar Cripto Moedas</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link disabled">Adicionar Cripto Moedas</a></li>
                       
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -34,9 +34,9 @@
                           <a href="#" class="dropdown-item"></a>
                         </div>
                       </li>
-                      <li class="nav-item"><a href="account.html" class="nav-link">Criar Conta</a></li>
+                      <li class="nav-item"><a href="/account" class="nav-link disabled">Criar Conta</a></li>
                       <li>
-                        <a href="about.html" class="nav-link">Sobre Nós</a>
+                        <a href="/about" class="nav-link">Sobre Nós</a>
                       </li>
                         
                     </ul>
@@ -44,32 +44,42 @@
                 </nav>
               </header>
           
+          
               <main>
                 <article>
-                    <div class="mt-5">
-                        <h1>Quem Somos</h1>
-                        <p>
-                            Somos estudantes do curso de Desenvolvimento de Sistemas na Instituição Proz Educação,<br>
-                            localizada em Belo Horizonte, Minas Gerais. <br>
-                            Nosso site tem como foco principal compra e venda de moedas.
-                        </p>
-                    </div>
-                </article>
-                <article>
-                    <h1>Informaçoes uteis</h1>
-                    <p>O site foi feito utilizando bootstrap, mas tecnologias basicas e semanticas do html e css</p>
-                </article>
-            </main>
-    
-            <footer>
-                <p>Site feito por <a href="https://github.com/joaovtk" class="link-opacity-25-hover link-underline-warning link-offset-3 link-secondary" target="_blank" rel="external">Joao Vitor Soares dos Reis</a></p>
-                <p>Site feito por <a href="https://github.com/eduardoodb" target="_blank" class="link-opacity-25-hover link-underline-warning link-offset-3 link-secondary" rel="external">Eduardo Oliveira Delo Bócio</a></p>
-                <p>Site feito por <a href="https://github.com/Adalberto-Franca" class="link-opacity-25-hover link-underline-warning link-offset-3 link-secondary" target="_blank" rel="external">Adalberto França</a></p>
-                <p>&copy; 2023 Cripto Store</p>
-                
-            </footer>
-        </div>
+                    <form action="" method="get">
 
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon-1">@</span>
+                            </div>
+                            <input name= "username" type="text" required class="form-control" placeholder="nome de usuario" aria-label="Username" aria-describedby="basic-addon1" />
+                        </div>
+
+        
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon-2">CPF</span>
+                            </div>
+                            <input name="cpf" type="text" required  required class="form-control" placeholder="123.456.789-09" aria-label="cpf" aria-describedby="basic-addon2" />
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon-3">EMAIL</span>
+                            </div>
+                            <input name="cpf" type="email" required  required class="form-control" placeholder="example.test@gmail.com" aria-label="email" aria-describedby="basic-addon3" />
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon-4">Senha</span>
+                            </div>
+                            <input name="cpf" type="password" required  required class="form-control" placeholder="Use uma senha forte" aria-label="senha" aria-describedby="basic-addon4" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Criar</button>
+                    </form>
+                </article>
+              </main>
+        </div>
         
     </body>
 </html>

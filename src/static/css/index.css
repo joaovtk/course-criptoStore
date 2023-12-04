@@ -42,8 +42,9 @@ label {
   width: 50px;
 }
 
-p {
+p, label {
   font-size: 15pt;
+  color: #fff;
 }
 
 .exclude {

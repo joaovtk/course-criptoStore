@@ -1,6 +1,6 @@
 {
-  "name": "CriptoStore",
-  "version": "1.0.0",
+  "name": "criptostore",
+  "version": "1.2.0",
   "main": "src/main.js",
   "repository": "https://github.com/joaovtk/CriptoStore",
   "author": "joaovtk <joaovitorsoaresdosreis3@gmail.com>",
@@ -9,12 +9,9 @@
     "dev": "nodemon src/main.js"
   },
   "dependencies": {
-    "@types/express": "^4.17.21",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
-    "nodemon": "^3.0.2",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.3.2"
+    "nodemon": "^3.0.2"
   }
 }

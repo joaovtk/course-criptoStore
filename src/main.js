@@ -16,9 +16,24 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
     res.render("about", {layout: false});
 });
-
-app.get("/account", (req, res)=> {
+/*
+app.get("/account", (req, res) => {
     res.render("account", {layout: false});
+});
+
+app.get("/account/register", (req, res) => {
+    
+});
+app.get("/account/login", (req, res) => {
+    
+});*/
+
+app.get("/login", (req, res) => {
+    res.render("login", {layout: false});
+});
+
+app.get("/test", (req, res) => {
+    res.render("login", {layout: false});
 });
 
 app.get("/buy", (req, res) => {

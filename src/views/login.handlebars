@@ -5,36 +5,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/index.css" />
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <title>Document</title>
     </head>
     <body>
-        <div class="log">
-                <div class="container-fluid">
-                <form action="/api/login" method="post">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="addon">
-                                @
-                            </span>
+        <div class="container-fluid">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light mt-5">
+                <img src="img/cripto.png" id="logo" alt="" />
+                <a class="navbar-brand" href="#">Cripto Store</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Perfil</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link disabled">Adicionar Cripto Moedas</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categorias
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navabarDropdown">
+                        <a href="#" class="dropdown-item"></a>
                         </div>
-                        <input type="text" class="form-control" placeholder="nome de usuario" aria-label="nome de usuario" aria-describedby="addon" />
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="addonPass">
-                                senha
-                            </span>
+                    </li>
+                    <li class="nav-item"><a href="/register" class="nav-link>R"egistrar</a></li>
+                    <li class="nav-item"><a href="/login" class="nav-link d disabled">Conectar-se</a></li>
+                    <li>
+                        <a href="/about" class="nav-link">Sobre Nós</a>
+                    </li>
+                    </ul>
+                </div>
+                </nav>
+            </header>
+            <main>
+                <article>
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon">@</span>
+                            </div>
+                            <input type="text" name="username" id="username" aria-label="Digite o nome de usuario" placeholder="Digite seu nome de usuario" aria-describedby="addon" class="form-control" />
                         </div>
-                        <input type="password" class="form-control" placeholder="****" aria-label="*****" aria-describedby="addonPass" />
-                    </div>
-                    <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-dark btn-lg">entrar</button>
-                    </div>
-                </form>
-            </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="addonPass">*</span>
+                            </div>
+                            <input type="password" name="password" id="password" placeholder="Digite sua senha" class="form-control" aria-label="Recipient's username" aria-describedby="addonPass" />
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary btn-lg btn-dark" type="submit">Conectar</button>
+                        </div>
+                    </form>
+                </article>
+            </main>
         </div>
     </body>
 </html>

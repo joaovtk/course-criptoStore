@@ -21,3 +21,14 @@ body {
 .cripto {
   font-size: 25pt;
 }
+
+header {
+  text-align: center;
+}
+
+#cart {
+  width: 50px;
+}
+#cart:hover {
+  cursor: pointer;
+}

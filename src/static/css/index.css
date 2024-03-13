@@ -7,16 +7,6 @@ article {
   background-color: #646E78;
 }
 
-.btn {
-  display: block;
-  margin-top: 5px;
-  width: 100%;
-  background-color: #8D98A7;
-  color: #fff;
-  font-size: 15pt;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 label {
   font-size: 15pt;
 }
@@ -42,6 +32,10 @@ p, label {
   color: #fff;
 }
 
-.exclude {
-  text-decoration: line-through;
+nav {
+  width: 100vw;
+}
+
+input {
+  width: 100%;
 }

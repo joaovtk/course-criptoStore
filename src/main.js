@@ -25,8 +25,10 @@ app.get("/buy", (req, res) => {
     res.render("temp", {layout: false});
 });
 
+
 app.listen(Number(process.env.PORT), process.env.HOST, () => {
     console.log(`Listerner in http://${process.env.HOST}:${process.env.PORT}`)
 });
+
 
 module.exports = app;

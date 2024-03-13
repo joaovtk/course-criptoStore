@@ -13,3 +13,11 @@ body {
 #logo {
     width: 50px;
 }
+
+.brand {
+  width: 50px;
+  margin-bottom: 10px;
+}
+.cripto {
+  font-size: 25pt;
+}

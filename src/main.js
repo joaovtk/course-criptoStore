@@ -12,13 +12,23 @@ app.set("view engine", "handlebars");
 app.set("views", __dirname+"/views");
 dotenv.config();
 app.use(express.static(__dirname+"/static"));
-let client = new MongoClient(process.env.MONGO_URL);
 
-app.get("/", async (req, res) => {
+async function getProducts(){
+    let client = new MongoClient(process.env.MONGO_URL);
     let store = client.db("store");
     let all = store.collection("cripto");
-
     let data = await all.find({}).limit(15).toArray();
+    return data;
+}
+let data;
+
+
+getProducts().then(async (d) => {
+    data = d;    
+});
+
+
+app.get("/", async (req, res) => {
     console.log(data);
     if(data.length == 0){
         res.render("error", {layout: false});

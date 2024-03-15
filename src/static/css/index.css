@@ -11,31 +11,34 @@ label {
   font-size: 15pt;
 }
 
-#add {
-  font-size: 150pt;
-  background-color: #646E78;
-  color: #fff;
-  width: 25vw;
-  height: 41vh;
-}
-
-#add > img {
-  width: 80%;
-}
-
-#logo {
-  width: 50px;
-}
-
-p, label {
-  font-size: 15pt;
-  color: #fff;
-}
-
 nav {
   width: 100vw;
 }
 
 .product {
-  width: 100px;
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.product {
+  background-color: #464B52;
+  width: 300px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 15pt;
+  color: #fff;
+}
+
+.product .name {
+  font-size: 25pt;
+}
+
+.product img {
+  width: 90%;
+  border-radius: 15px;
 }

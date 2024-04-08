@@ -56,7 +56,7 @@ app.get("/check", (req, res) => {
     res.send("Teste").end()
 })
 
-app.listen(Number(process.env.PORT), process.env.HOST, () => {
+app.listen(Number(8080),"localhost", () => {
     console.log(`Listerner in http://${process.env.HOST}:${process.env.PORT}`)
 });
 

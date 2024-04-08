@@ -52,7 +52,7 @@ app.post("/create", (req, res) => {
     let user = req.query;
     console.log(user);
 });
-app.get("/checks", (req, res) => {
+app.get("/check", (req, res) => {
     res.send("Teste").end()
 })
 

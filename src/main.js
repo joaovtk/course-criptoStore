@@ -52,8 +52,8 @@ app.post("/create", (req, res) => {
     let user = req.query;
     console.log(user);
 });
-app.get("/check", (req, res) => {
-    res.send("Teste").end();
+app.get("/checks", (req, res) => {
+    res.send("Teste").end()
 })
 
 app.listen(Number(process.env.PORT), process.env.HOST, () => {

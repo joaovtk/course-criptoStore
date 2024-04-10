@@ -1,9 +1,20 @@
-# Cripto Store - A cada dia mais perto do mercado de criptomoedas
-<p>O que é a cripto store: </p>
-<p>A cripto store é uma empresa em que vendemos nossas famosas cripto moedas, com ela podemos levar o mercado de cripto moedas para pessoas leigas com uma interface simples</p>
+# Cripto Store
 
-# Homepage
-<p>A primeira parte que devemos atentar é que cada dia temos novas criptomoedas, e com isso podemos ficar atualizado e por isso que nossa home é adpatada para isso</p>
+# Tecnologias Usadas
+- NextJS/React
+- MongoDB
 
-# URL
-<p><a href="https://criptostore.onrender.com/">Cripto Store</a></p>
+# Como Buildar o Site
+Obs: Para você conseguir rodar o site você deve usar o nodejs 
+Para instalar o node basta entra no site https://nodejs.org/en
+
+Instalando o YARN
+```
+  npm install yarn -g
+```
+Build com NPM (Padrão)
+```
+  npm install
+  npm run dev
+```
+<p>Projeto em construção</p>
